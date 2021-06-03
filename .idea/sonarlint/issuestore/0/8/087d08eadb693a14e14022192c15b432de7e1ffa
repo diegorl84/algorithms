@@ -1,0 +1,16 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÀÊ€şÿÿÿÿ8òÔµ/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©•ùØùÿÿÿÿ8òÔµ/
+m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áù…ø8ãåÏµ/
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8ìú µ/
+A
+java:S1659"Declare "j" on a separate line.(á”æåşÿÿÿÿ8¦üØµ/
+Z
+java:S1197"8Move the array designator from the variable to the type.(ÔÀÊ€şÿÿÿÿ8òÔµ/
+Z
+java:S1197"8Move the array designator from the variable to the type.(©•ùØùÿÿÿÿ8òÔµ/
+U
+java:S1197>"8Move the array designator from the variable to the type.(¾É³ù8ãåÏµ/
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(ÀÉŒ üÿÿÿÿ8ãåÏµ/
+]	java:S125B"<This block of commented-out lines of code should be removed.(ˆ“ôåøÿÿÿÿ8™ÀÇµ/
