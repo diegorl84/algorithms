@@ -5,6 +5,10 @@ package sort;
  * similar to selection sort where we first find the minimum element and place the minimum element
  * at the beginning. We repeat the same process for the remaining elements Binary Heap: Complete
  * Binary Tree ordered
+ *
+ * Time Complexity: Time complexity of heapify is O(Logn).
+ * Time complexity of createAndBuildHeap() is O(n) and the overall time complexity of Heap Sort is O(nLogn).
+ *
  */
 public class HeapSort extends Sort {
 
@@ -14,6 +18,13 @@ public class HeapSort extends Sort {
 
     for (int i = n / 2 - 1; i >= 0; i--) {
       heapfy(arr, n, i);
+    }
+
+    for (int i = n - 1; i > 0; i--) {
+      int temp = arr[0];
+      arr[0] = arr[i];
+      arr[i] = temp;
+      heapfy(arr, i, 0);
     }
   }
 
