@@ -1,0 +1,102 @@
+package principles;
+
+import java.util.Arrays;
+
+/**
+ * This is the list of enums that are currently used to build the category context for rule execution
+ */
+public enum CategoryID {
+    CAMERA("nBE4PHLtd1"),
+    CAMERA_AND_CAMCORDER("NOOPwgIkP5"),
+    COMPUTERS_AND_OFFICE("5xUXP3WPS"),
+    TV("GaIJcDM7o6"),
+    IPAD("n2NeNdO5B4"),
+    IPHONE("M7EKQiMOc0"),
+    LAPTOP("DSEfIqw1cA"),
+    LAPTOP_REPLACEMENT("W3XcWctSY6"),
+    LAPTOPS_BUNDLE("RHPdYgMVd6"),
+    DESKTOP("h4I6CF4Df2"),
+    DESKTOPS_BUNDLE("OgxMe6bUB5"),
+    IPOD("dB7Wi8n8f5"),
+    MP3_PLAYER("CMAOArvtE"),
+    PHONE("MUMXbfKBB6"),
+    TABLET("t3LJAOcCd"),
+    TABLETS_BUNDLE("DR1adle160"),
+    TABLET_PCS("BY0T57DNE5"),
+    TABLET_READERS("VUL1B5OTO7"),
+    EBOOKS("SWdFLkIHA5"),
+    APPLIANCE("jQJEheL7K0"),
+    IPHONE6_128GB("MAQ7ROMf81"),
+    IPHONE6_64GB("JNlh3u8445"),
+    IPHONE6_16GB("ANmX3rI4s6"),
+    IPHONE6PLUS_128GB("M48c4Lx8c8"),
+    IPHONE6PLUS_64GB("qqwp1BodH8"),
+    IPHONE6PLUS_16GB("PdHhEIJFc1"),
+    HTC("JAM0HgLb25"),
+    MOTOROLA("XP4xfbFDF0"),
+    TELEVISION("YJNfdPqJF3"),
+    MAJOR_APPLIANCE("jQJEheL7K0"),
+    KITCHEN_APPLIANCE("OahuqEAQR6"),
+    KITCHEN_APPLIANCE_BUNDLE("T6Ld4VXLE5"),
+    LAUNDRY_APPLIANCE_BUNDLE("peDHNm0Ox4"),
+    SAMS_CLUB_MAJOR_APPLIANCE("HAEE3P5C48"),
+    SAMS_CLUB_MAJOR_APPLIANCE_BUNDLE("Gl6m4I0VE5"),
+    OTHER_ELECTRONICS("fxTNP4QQK4"),
+    COSTCO_TABLETS("OSyTr0OE3"),
+    GADGETS_OTHERS("Gs8CU54GF6"),
+    TABLET_PC("oNTBD0YTA3"),
+    COSTCO_TABLET_AND_READER("VUL1B5OTO7"),
+    OPTICAL("GP3iAeoHj5"),
+    PRINTER("nbLBAAoct8"),
+    PRINTER_AND_SHREDDER("lcmEv6MPE8"),
+    SHREDDER("HqFHxTQfR2"),
+    SCANNERS("COlT51oCF8"),
+    FURNITURE("U2rfjMNTX7"),
+    JEWELRY_AND_WATCHES("I7qd5O4x82"),
+    CONSUMER_ELECTRONICS("KgNX1gVCD1"),
+    PREPAID_PHONE("fb3MueVXS4"),
+    AMAZON_KINDLE("JFCdaq8GF4"),
+    WEARABLES("Bi4GJRa8K8"),
+    WASHERS_AND_DRYERS("De5PE52f16"),
+    MICROWAVE("o1SQtINPhA"),
+    GRASS_TRIMMER_EDGER("I2PNq1kTd0"),
+    GAS_GRILL("YCVyKB03H1"),
+    LAWN_MOWER("J1jQILD1e3"),
+    PRESSURE_WASHER_CONSUMER_ELETRONICS("PULABWJTO5"),
+    PRESSURE_WASHER_LAWN_AND_GARDEN("yPJGjELkq0"),
+    CHAINSAW_CONSUMER_ELETRONICS("5bOfLcSsb"),
+    CHAINSAW_LAWN_AND_GARDEN("HE4aNB7D71"),
+    GENERATOR_CONSUMER_ELETRONICS("LH1IlrVQn5"),
+    GENERATOR_LAWN_AND_GARDEN("MJ44yHLTa6"),
+    SNOW_BLOWER("pFAhi0y8FA"),
+    AIR_CONDITIONER_CONSUMER_ELETRONICS("xaJtbKXXR5"),
+    AIR_CONDITIONER_LAWN_AND_GARDEN("jRMUeVfQy7"),
+    MINI_FRIDGE("EuW28JXPU7"),
+    REFRIGERATORS("pr1WX8doCA"),
+    AUTOMOTIVE("y4U2BNEvW1"),
+    AUTOMOTIVE_OTHER_ELETRONICS("Rj0JjNXdf2"),
+    STANDALONE_PARTS("i8Fa2aebS"),
+    MATTRESS("a4J15gPKQ5"),
+    OTHER_GAS_ITEMS_OTHER_ELETRONICS_CONSUMER_ELETRONICS("c5eND6OCS5"),
+    OTHER_GAS_ITEMS_CONSUMER_ELETRONICS("BCAfUTXdU6"),
+    OTHER_GAS_ITEMS_LAWN_AND_GARDEN("m5iDXnKtY1"),
+    LAWN_AND_GARDEN("RIftGTOWa8");
+
+    private final String id;
+
+    CategoryID(String id) {
+        this.id = id;
+    }
+
+    public String getID() {
+        return id;
+    }
+
+    public static CategoryID get(String id) {
+        return Arrays.stream(CategoryID.values())
+                .filter(env -> env.id.equals(id))
+                .findFirst()
+                .orElse(null);
+    }
+
+}

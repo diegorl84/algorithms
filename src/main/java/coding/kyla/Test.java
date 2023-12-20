@@ -27,6 +27,9 @@ public class Test {
 
         @Override
         public boolean equals(Object obj) {
+            if(!(obj instanceof Person )){
+                return false;
+            }
             if(this == obj) return true;
             Person o = (Person) obj;
             if(this.id == o.id && this.name.equals(o.name)) return true;

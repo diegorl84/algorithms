@@ -28,5 +28,8 @@ public class Ex1 {
     public static void main(String[] args) {
         int[] test = {3, 5, -4, 8, 11, 1, -1, 6};
         Arrays.stream(twoNumberSum(test, 10)).forEach(System.out::println);
+        TypeEnum r = TypeEnum.valueOf("CconstructItem(original, latestCategory, facv3be)");
+        System.out.println(r);
+
     }
 }

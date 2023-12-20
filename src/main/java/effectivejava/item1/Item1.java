@@ -1,4 +1,4 @@
-package effectivejava;
+package effectivejava.item1;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,14 +6,13 @@ import java.util.List;
 
 
 /**
+ * Item 1: Consider static factory methods instead of constructors (Instance control)
  * Use of public static methods (static factories) instead of constructor
  */
 public class Item1 {
     //Obtain instance by constructor
     public Item1() {
     }
-
-
 
     /**
      * 1. We can use different names

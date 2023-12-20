@@ -1,4 +1,4 @@
-package effectivejava;
+package effectivejava.item3;
 
 public enum SingletonBEnum {
     INSTANCE;

@@ -1,4 +1,4 @@
-package effectivejava;
+package effectivejava.item2;
 
 import org.junit.Test;
 

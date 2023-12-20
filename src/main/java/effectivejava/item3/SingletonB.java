@@ -1,4 +1,4 @@
-package effectivejava;
+package effectivejava.item3;
 
 /**
  * Item 3: Enforce the singleton property with a private
