@@ -1,4 +1,4 @@
-package algoexpert.E6_FindClosestValueInBTS;
+package algoexpert.E7_FindClosestValueInBTS;
 
 
 /**
