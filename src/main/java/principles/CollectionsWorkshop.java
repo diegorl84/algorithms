@@ -52,7 +52,7 @@ import java.util.stream.Collectors;
  * Map (Not inherit from Collection but it same package). (K,V): put(), get(), containsKey(), containsValue(), size(), isEmpty()
  *  - HashMap: Internally it creates a table (linkedList) of type Node that implements Map.Entry
  *      - Creates hashCode() from key
- *      - With that hashCode it will do hashing() and module operator to (0, 15) to get the index where data will be storaged in table
+ *      - With that hashCode it will do hashing() and module operator to (0, 15) to get the index where data will be stored in table
  *      - How collision works? If linkedList has objects in do foreach equals keys. if so, value is replaced, otherwise, attached to the linkedList when find null. T
  *                              - Travers all the elements in the linkedLink
  *                              - From java 8, when threshold is reach, 8 node, LinkedList is converted to balance tree. Change O(n) to O log(n)
@@ -147,14 +147,14 @@ public class CollectionsWorkshop {
                 {8, 4},
                 {3, 9}
         };
-        Arrays.sort(objectList, (a,b) -> Integer.compare(a[0],b[0]));
+        java.util.Arrays.sort(objectList, (a, b) -> Integer.compare(a[0],b[0]));
         ArrayUtil.traverse2DArray(objectList);
 
     }
 
     @Test
     public void sortList(){
-        List<Integer> listOne = Arrays.asList(110,2,8,5,2,45,12,90);
+        List<Integer> listOne = java.util.Arrays.asList(110,2,8,5,2,45,12,90);
         Collections.sort(listOne);
         System.out.println(listOne);
 
